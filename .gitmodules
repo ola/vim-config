@@ -34,3 +34,6 @@
 	path = bundle/zencoding
   url = https://github.com/mattn/zencoding-vim.git
   ignore = untracked
+[submodule "bundle/task"]
+	path = bundle/task
+	url = https://github.com/samsonw/vim-task.git
