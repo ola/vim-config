@@ -14,6 +14,8 @@ set smartindent
 set backspace=indent,eol,start whichwrap+=<,>,[,]
 set wildignore+=*.o,*.obj,*.class,*.dll,.git,.hg,*.jar,target/**
 
+set cpoptions+=$
+
 set fileformat=unix
 set encoding=utf-8
 
