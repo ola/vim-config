@@ -37,3 +37,7 @@
 [submodule "bundle/task"]
 	path = bundle/task
 	url = https://github.com/samsonw/vim-task.git
+[submodule "bundle/scala"]
+	path = bundle/scala
+	url = https://github.com/ewiplayer/vim-scala.git
+  ignore = untracked
