@@ -41,3 +41,7 @@
 	path = bundle/scala
 	url = https://github.com/ewiplayer/vim-scala.git
   ignore = untracked
+[submodule "bundle/coffeescript"]
+	path = bundle/coffeescript
+	url = https://github.com/kchmck/vim-coffee-script.git
+  ignore = untracked
