@@ -3,8 +3,6 @@ My VIM (http://www.vim.org/) configuration.
 Plugins:
 
     * matchit       http://www.vim.org/scripts/script.php?script_id=39
-    * python_match  http://www.vim.org/scripts/script.php?script_id=386
-    * scala support https://lampsvn.epfl.ch/trac/scala/browser/scala-tool-support/trunk/src/vim
     * taglist       http://www.vim.org/scripts/script.php?script_id=273
     * BufOnly       http://www.vim.org/scripts/script.php?script_id=1071
     * LustyJuggler  http://www.vim.org/scripts/script.php?script_id=2050
@@ -15,16 +13,23 @@ Bundles:
 
     * ack             https://github.com/mileszs/ack.vim.git
     * autoclose       https://github.com/Townk/vim-autoclose.git
+    * coffeescript    https://github.com/kchmck/vim-coffee-script
     * commandt        https://github.com/wincent/Command-T.git
     * fugitive        https://github.com/tpope/vim-fugitive.git
     * nerdcommenter   https://github.com/scrooloose/nerdcommenter.git
     * repeat          https://github.com/tpope/vim-repeat.git
+    * scala           https://github.com/ewiplayer/vim-scala
     * snipmate        https://github.com/msanders/snipmate.vim.git
     * surround        https://github.com/tpope/vim-surround.git
+    * task            https://github.com/samsonw/vim-task.git
     * zencoding       https://github.com/mattn/zencoding-vim.git
-    * vim-task        https://github.com/samsonw/vim-task.git
+
+Syntax:
+
+    * Ragel           http://svn.complang.org/ragel/trunk/
 
 Colors:
 
     * Oceandeep       http://www.vim.org/scripts/script.php?script_id=368
     * Son of Obsidian http://www.vim.org/scripts/script.php?script_id=3260
+    * Solarized       https://github.com/altercation/solarized/tree/master/vim-colors-solarized
