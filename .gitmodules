@@ -46,3 +46,7 @@
 	path = bundle/scala
 	url = git://github.com/derekwyatt/vim-scala.git
   ignore = untracked
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = git://github.com/majutsushi/tagbar
+  ignore=untracked
