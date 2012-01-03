@@ -39,6 +39,9 @@ set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮
 " Save on losing focus
 au FocusLost * :wa
 
+" Resize splits when the window is resized
+au VimResized * exe "normal! \<c-w>="
+
 " }}}
 
 " Wildmenu completion {{{
@@ -65,6 +68,8 @@ set expandtab
 
 set autoindent
 set smartindent
+
+set switchbuf=usetab
 
 " }}}
 
@@ -106,11 +111,17 @@ set gdefault
 nnoremap j gj
 nnoremap k gk
 
+noremap  <F1> :set invfullscreen<CR>
+inoremap <F1> <ESC>:set invfullscreen<CR>a
 map <F7> :set list!<CR>
 map <F8> :set number!<CR>
 
 map <Leader>w :w<CR>
 map <Leader>q :q!<CR>
+
+" Space to toggle folds.
+nnoremap <Space> za
+vnoremap <Space> za
 
 map <Leader>h <C-W>h
 map <Leader>j <C-W>j
@@ -119,6 +130,9 @@ map <Leader>l <C-W>l
 
 map <Leader>n :bnext<CR>
 map <Leader>p :bprevious<CR>
+
+" <leader><leader> switches between current and previous buffers
+nnoremap <leader><leader> <c-^>
 
 nnoremap <leader><space> :noh<cr>
 
@@ -139,10 +153,22 @@ nnoremap <leader>v V`]
 map <C-j> ddp
 map <C-k> ddkP
 
+" expand to directory of current file
+cnoremap %% <C-R>=expand('%:h').'/'<cr>
+
+map <leader>ew :e %%
+map <leader>es :sp %%
+map <leader>ev :vsp %%
+map <leader>et :tabe %%
+
 " Plugin mappings
 map <Leader>bo :BufOnly<CR>
 map <Leader>A :Ack<SPACE>
-map <Leader>T :TagbarToggle<CR>
+map <F3> :TagbarToggle<CR>
+
+" Command-T
+map <leader>t :CommandTFlush<cr>\|:CommandT<cr>
+map <leader>T :CommandTFlush<cr>\|:CommandT %%<cr>
 
 " Fugitive
 map <Leader>gd :Gdiff<CR>
@@ -153,9 +179,6 @@ map <Leader>gp :Git push<CR>
 map <Leader>gco :Gcheckout<CR>
 map <Leader>gci :Gcommit<CR>
 
-" Remap annoying keys
-noremap  <F1> :set invfullscreen<CR>
-inoremap <F1> <ESC>:set invfullscreen<CR>a
 nnoremap K <nop>
 
 " }}}
@@ -182,9 +205,8 @@ endfunction
 
 if has("gui_running")
   set guifont=Liberation\ Mono:h16
-
-  set guitablabel=%N\ %t\ %M
   set guioptions=aem
+  set guitablabel=%N\ %t\ %M
 
   highlight SpellBad term=underline gui=undercurl guisp=Orange
 
@@ -192,9 +214,6 @@ if has("gui_running")
   set fillchars+=vert:│
 
   if has("gui_macvim")
-    set lines=120
-    set columns=120
-
     set fuoptions=maxvert,maxhorz
   else
     " Not MacVIM
@@ -205,3 +224,40 @@ endif
 
 " }}}
 
+" Scala {{{
+
+augroup ft_scala
+  au!
+
+  au FileType scala setlocal foldlevel=99
+  au FileType scala setlocal foldmethod=marker
+  au FileType scala setlocal foldmarker={,}
+augroup END
+
+let g:tagbar_type_scala = {
+    \ 'ctagstype' : 'Scala',
+    \ 'kinds'     : [
+        \ 'p:packages:1',
+        \ 'V:values',
+        \ 'v:variables',
+        \ 'T:types',
+        \ 't:traits',
+        \ 'o:objects',
+        \ 'a:aclasses',
+        \ 'c:classes',
+        \ 'r:cclasses',
+        \ 'm:methods'
+    \ ]
+\ }
+
+" }}}
+
+" VIM {{{
+
+augroup ft_vim
+  au!
+
+  au FileType vim setlocal foldmethod=marker
+augroup END
+
+" }}}
