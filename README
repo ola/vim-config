@@ -3,7 +3,6 @@ My VIM (http://www.vim.org/) configuration.
 Plugins:
 
     * matchit       http://www.vim.org/scripts/script.php?script_id=39
-    * taglist       http://www.vim.org/scripts/script.php?script_id=273
     * BufOnly       http://www.vim.org/scripts/script.php?script_id=1071
     * LustyJuggler  http://www.vim.org/scripts/script.php?script_id=2050
 
@@ -21,6 +20,7 @@ Bundles:
     * scala           https://github.com/ewiplayer/vim-scala
     * snipmate        https://github.com/msanders/snipmate.vim.git
     * surround        https://github.com/tpope/vim-surround.git
+    * tagbar          https://github.com/majutsushi/tagbar.git
     * task            https://github.com/samsonw/vim-task.git
     * zencoding       https://github.com/mattn/zencoding-vim.git
 
