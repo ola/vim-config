@@ -174,9 +174,8 @@ map <leader>T :CommandTFlush<cr>\|:CommandT %%<cr>
 map <Leader>gd :Gdiff<CR>
 map <Leader>gs :Gstatus<CR>
 map <Leader>gw :Gwrite<CR>
-map <Leader>ga :Gadd<CR>
 map <Leader>gp :Git push<CR>
-map <Leader>gco :Gcheckout<CR>
+map <Leader>gco :Gread<CR>
 map <Leader>gci :Gcommit<CR>
 
 nnoremap K <nop>
