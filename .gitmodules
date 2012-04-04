@@ -50,3 +50,7 @@
 	path = bundle/tagbar
 	url = git://github.com/majutsushi/tagbar
   ignore=untracked
+[submodule "bundle/less"]
+	path = bundle/less
+	url = https://github.com/groenewege/vim-less.git
+  ignore = untracked
