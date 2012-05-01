@@ -13,7 +13,7 @@ Bundles:
     * ack             https://github.com/mileszs/ack.vim.git
     * autoclose       https://github.com/Townk/vim-autoclose.git
     * coffeescript    https://github.com/kchmck/vim-coffee-script
-    * commandt        https://github.com/wincent/Command-T.git
+    * ctrlp           https://github.com/kien/ctrlp.vim.git
     * fugitive        https://github.com/tpope/vim-fugitive.git
     * nerdcommenter   https://github.com/scrooloose/nerdcommenter.git
     * repeat          https://github.com/tpope/vim-repeat.git
@@ -21,7 +21,6 @@ Bundles:
     * snipmate        https://github.com/msanders/snipmate.vim.git
     * surround        https://github.com/tpope/vim-surround.git
     * tagbar          https://github.com/majutsushi/tagbar.git
-    * task            https://github.com/samsonw/vim-task.git
     * zencoding       https://github.com/mattn/zencoding-vim.git
 
 Syntax:

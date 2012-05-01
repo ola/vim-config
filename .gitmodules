@@ -6,10 +6,6 @@
 	path = bundle/autoclose
   url = https://github.com/Townk/vim-autoclose.git
   ignore = untracked
-[submodule "bundle/commandt"]
-	path = bundle/commandt
-	url = https://github.com/wincent/Command-T.git
-  ignore = untracked
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
@@ -34,10 +30,6 @@
 	path = bundle/zencoding
   url = https://github.com/mattn/zencoding-vim.git
   ignore = untracked
-[submodule "bundle/task"]
-	path = bundle/task
-	url = https://github.com/samsonw/vim-task.git
-  ignore = untracked
 [submodule "bundle/coffeescript"]
 	path = bundle/coffeescript
 	url = https://github.com/kchmck/vim-coffee-script.git
@@ -53,4 +45,8 @@
 [submodule "bundle/less"]
 	path = bundle/less
 	url = https://github.com/groenewege/vim-less.git
+  ignore = untracked
+[submodule "bundle/ctrlp"]
+	path = bundle/ctrlp
+	url = https://github.com/kien/ctrlp.vim.git
   ignore = untracked

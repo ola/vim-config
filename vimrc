@@ -166,9 +166,9 @@ map <Leader>bo :BufOnly<CR>
 map <Leader>A :Ack<SPACE>
 map <F3> :TagbarToggle<CR>
 
-" Command-T
-map <leader>t :CommandTFlush<cr>\|:CommandT<cr>
-map <leader>T :CommandTFlush<cr>\|:CommandT %%<cr>
+" ctrl-p
+map <leader>t :CtrlP<CR>
+map <leader>T :CtrlP %%<CR>
 
 " Fugitive
 map <Leader>gd :Gdiff<CR>
