@@ -260,3 +260,12 @@ augroup ft_vim
 augroup END
 
 " }}}
+
+" Groovy {{{
+
+augroup ft_groovy
+  au!
+
+  au BufNewFile,BufRead *.gradle setf groovy
+
+" }}}
