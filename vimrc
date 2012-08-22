@@ -203,7 +203,10 @@ endfunction
 " Environments (GUI/Console) {{{
 
 if has("gui_running")
-  set guifont=Liberation\ Mono:h16
+  let g:Powerline_symbols = 'fancy'
+
+  "set guifont=Liberation\ Mono:h18
+  set guifont=Menlo\ For\ Powerline:h18
   set guioptions=aem
   set guitablabel=%N\ %t\ %M
 
@@ -267,5 +270,15 @@ augroup ft_groovy
   au!
 
   au BufNewFile,BufRead *.gradle setf groovy
+
+" }}}
+
+" Syntastic {{{
+
+let g:syntastic_mode_map = { 'mode': 'active', 'active_filetypes': ['coffee', 'javascript', 'ruby', 'xml'], 'passive_filetypes': [] }
+let g:syntastic_error_symbol = '✘'
+let g:syntastic_warning_symbol = '⚡'
+let g:syntastic_style_error_symbol = '✘'
+let g:syntastic_style_warning_symbol = '⚡'
 
 " }}}
