@@ -234,6 +234,12 @@ augroup ft_scala
   au FileType scala setlocal foldlevel=99
   au FileType scala setlocal foldmethod=marker
   au FileType scala setlocal foldmarker={,}
+
+  au FileType scala setlocal makeprg=sbt\ -Dsbt.log.noformat=true\ compile
+
+  au FileType scala setlocal errorformat=%E\ %#[error]\ %f:%l:\ %m,%C\ %#[error]\ %p^,%-C%.%#,%Z,
+        \%W\ %#[warn]\ %f:%l:\ %m,%C\ %#[warn]\ %p^,%-C%.%#,%Z,
+        \%-G%.%#
 augroup END
 
 let g:tagbar_type_scala = {
@@ -275,7 +281,7 @@ augroup ft_groovy
 
 " Syntastic {{{
 
-let g:syntastic_mode_map = { 'mode': 'active', 'active_filetypes': ['coffee', 'javascript', 'ruby', 'xml'], 'passive_filetypes': [] }
+let g:syntastic_mode_map = { 'mode': 'active', 'active_filetypes': ['coffee', 'javascript', 'ruby', 'sass', 'xml'], 'passive_filetypes': ['scala', 'java'] }
 let g:syntastic_error_symbol = '✘'
 let g:syntastic_warning_symbol = '⚡'
 let g:syntastic_style_error_symbol = '✘'
