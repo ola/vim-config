@@ -210,6 +210,7 @@ if has("gui_running")
   set guioptions=aem
   set guitablabel=%N\ %t\ %M
 
+  highlight SignColumn gui=bold guibg=grey6 guifg=LightSkyBlue3
   highlight SpellBad term=underline gui=undercurl guisp=Orange
 
   " Use a line-drawing char for pretty vertical splits.
@@ -281,7 +282,7 @@ augroup ft_groovy
 
 " Syntastic {{{
 
-let g:syntastic_mode_map = { 'mode': 'active', 'active_filetypes': ['coffee', 'javascript', 'ruby', 'sass', 'xml'], 'passive_filetypes': ['scala', 'java'] }
+let g:syntastic_mode_map = { 'mode': 'active', 'active_filetypes': ['go', 'coffee', 'javascript', 'ruby', 'sass', 'xml'], 'passive_filetypes': ['scala', 'java'] }
 let g:syntastic_error_symbol = '✘'
 let g:syntastic_warning_symbol = '⚡'
 let g:syntastic_style_error_symbol = '✘'

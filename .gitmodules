@@ -70,3 +70,7 @@
   path = bundle/YouCompleteMe
   url = git://github.com/Valloric/YouCompleteMe.git
   ignore = untracked
+[submodule "bundle/gitgutter"]
+	path = bundle/gitgutter
+	url = git://github.com/airblade/vim-gitgutter.git
+  ignore = untracked
