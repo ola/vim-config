@@ -280,12 +280,3 @@ augroup ft_groovy
 
 " }}}
 
-" Syntastic {{{
-
-let g:syntastic_mode_map = { 'mode': 'active', 'active_filetypes': ['go', 'coffee', 'javascript', 'ruby', 'sass', 'xml'], 'passive_filetypes': ['scala', 'java'] }
-let g:syntastic_error_symbol = '✘'
-let g:syntastic_warning_symbol = '⚡'
-let g:syntastic_style_error_symbol = '✘'
-let g:syntastic_style_warning_symbol = '⚡'
-
-" }}}

@@ -4,7 +4,6 @@ Plugins:
 
     * matchit       http://www.vim.org/scripts/script.php?script_id=39
     * BufOnly       http://www.vim.org/scripts/script.php?script_id=1071
-    * LustyJuggler  http://www.vim.org/scripts/script.php?script_id=2050
 
 Bundles:
 
@@ -22,11 +21,8 @@ Bundles:
     * powerline       https://github.com/Lokaltog/vim-powerline
     * repeat          https://github.com/tpope/vim-repeat.git
     * scala           https://github.com/derekwyatt/vim-scala
-    * snipmate        https://github.com/msanders/snipmate.vim.git
     * surround        https://github.com/tpope/vim-surround.git
-    * syntastic       https://github.com/scrooloose/syntastic
     * tagbar          https://github.com/majutsushi/tagbar.git
-    * YouCompleteMe   https://github.com/Valloric/YouCompleteMe.git
     * vimproc         https://github.com/Shougo/vimproc.git
     * zencoding       https://github.com/mattn/zencoding-vim.git
 
