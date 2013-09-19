@@ -24,7 +24,6 @@ Bundles:
     * surround        https://github.com/tpope/vim-surround.git
     * tagbar          https://github.com/majutsushi/tagbar.git
     * vimproc         https://github.com/Shougo/vimproc.git
-    * zencoding       https://github.com/mattn/zencoding-vim.git
 
 Syntax:
 
