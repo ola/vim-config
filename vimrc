@@ -114,7 +114,7 @@ nnoremap k gk
 noremap  <F1> :set invfullscreen<CR>
 inoremap <F1> <ESC>:set invfullscreen<CR>a
 map <F7> :set list!<CR>
-map <F8> :set number!<CR>
+map <F8> :set relativenumber!<CR>
 
 map <Leader>w :w<CR>
 map <Leader>q :q!<CR>
