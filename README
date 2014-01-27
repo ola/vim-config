@@ -13,6 +13,7 @@ Bundles:
     * autoclose       https://github.com/Townk/vim-autoclose.git
     * coffeescript    https://github.com/kchmck/vim-coffee-script
     * ctrlp           https://github.com/kien/ctrlp.vim.git
+    * elixir          https://github.com/elixir-lang/vim-elixir.git 
     * emmet           https://github.com/mattn/emmet-vim.git
     * fugitive        https://github.com/tpope/vim-fugitive.git
     * gitgutter       https://github.com/airblade/vim-gitgutter.git

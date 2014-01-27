@@ -62,3 +62,7 @@
 	path = bundle/emmet
 	url = http://github.com/mattn/emmet-vim.git
   ignore = untracked
+[submodule "bundle/elixir"]
+	path = bundle/elixir
+	url = git@github.com:elixir-lang/vim-elixir.git
+  ignore = untracked
