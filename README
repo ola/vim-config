@@ -24,6 +24,7 @@ Bundles:
     * scala           https://github.com/derekwyatt/vim-scala
     * surround        https://github.com/tpope/vim-surround.git
     * tagbar          https://github.com/majutsushi/tagbar.git
+    * xptemplate      https://github.com/drmingdrmer/xptemplate.git
     * vimproc         https://github.com/Shougo/vimproc.git
 
 Syntax:

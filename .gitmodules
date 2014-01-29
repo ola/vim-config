@@ -66,3 +66,7 @@
 	path = bundle/elixir
 	url = git@github.com:elixir-lang/vim-elixir.git
   ignore = untracked
+[submodule "bundle/xptemplate"]
+	path = bundle/xptemplate
+	url = git@github.com:drmingdrmer/xptemplate.git
+  ignore = untracked
