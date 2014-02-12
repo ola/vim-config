@@ -55,18 +55,22 @@
   url = git://github.com/Shougo/vimproc.git
   ignore = untracked
 [submodule "bundle/gitgutter"]
-	path = bundle/gitgutter
-	url = git://github.com/airblade/vim-gitgutter.git
+  path = bundle/gitgutter
+  url = git://github.com/airblade/vim-gitgutter.git
   ignore = untracked
 [submodule "bundle/emmet"]
-	path = bundle/emmet
-	url = http://github.com/mattn/emmet-vim.git
+  path = bundle/emmet
+  url = http://github.com/mattn/emmet-vim.git
   ignore = untracked
 [submodule "bundle/elixir"]
-	path = bundle/elixir
-	url = git@github.com:elixir-lang/vim-elixir.git
+  path = bundle/elixir
+  url = git@github.com:elixir-lang/vim-elixir.git
   ignore = untracked
 [submodule "bundle/xptemplate"]
-	path = bundle/xptemplate
-	url = git@github.com:drmingdrmer/xptemplate.git
+  path = bundle/xptemplate
+  url = git@github.com:drmingdrmer/xptemplate.git
+  ignore = untracked
+[submodule "bundle/nimrod"]
+  path = bundle/nimrod
+  url = git@github.com:zah/nimrod.vim.git
   ignore = untracked

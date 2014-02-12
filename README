@@ -19,6 +19,7 @@ Bundles:
     * gitgutter       https://github.com/airblade/vim-gitgutter.git
     * less            https://github.com/groenewege/vim-less
     * nerdcommenter   https://github.com/scrooloose/nerdcommenter.git
+    * nimrod          https://github.com/zah/nimrod.vim/
     * powerline       https://github.com/Lokaltog/vim-powerline
     * repeat          https://github.com/tpope/vim-repeat.git
     * scala           https://github.com/derekwyatt/vim-scala
