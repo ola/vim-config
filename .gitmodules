@@ -26,10 +26,6 @@
   path = bundle/zencoding
   url = https://github.com/mattn/zencoding-vim.git
   ignore = untracked
-[submodule "bundle/coffeescript"]
-  path = bundle/coffeescript
-  url = https://github.com/kchmck/vim-coffee-script.git
-  ignore = untracked
 [submodule "bundle/scala"]
   path = bundle/scala
   url = git://github.com/derekwyatt/vim-scala.git
