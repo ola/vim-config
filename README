@@ -15,6 +15,7 @@ Bundles:
     * ctrlp           https://github.com/kien/ctrlp.vim.git
     * elixir          https://github.com/elixir-lang/vim-elixir.git 
     * emmet           https://github.com/mattn/emmet-vim.git
+    * fswitch         https://github.com/derekwyatt/vim-fswitch
     * fugitive        https://github.com/tpope/vim-fugitive.git
     * gitgutter       https://github.com/airblade/vim-gitgutter.git
     * less            https://github.com/groenewege/vim-less

@@ -74,3 +74,7 @@
   path = bundle/nimrod
   url = git@github.com:zah/nimrod.vim.git
   ignore = untracked
+[submodule "bundle/fswitch"]
+	path = bundle/fswitch
+	url = git@github.com:derekwyatt/vim-fswitch.git
+  ignore = untracked
