@@ -180,6 +180,8 @@ map <Leader>gci :Gcommit<CR>
 
 nnoremap K <nop>
 
+" XPT
+let g:xptemplate_key = '<Tab>'
 " }}}
 
 " Functions {{{
@@ -277,6 +279,6 @@ augroup ft_groovy
   au!
 
   au BufNewFile,BufRead *.gradle setf groovy
+augroup END
 
 " }}}
-
