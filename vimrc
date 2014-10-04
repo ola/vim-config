@@ -19,6 +19,7 @@ set hidden
 set history=1000
 set vb t_vb=
 set nobackup
+set noundofile
 set nowrap
 set splitbelow
 set splitright
