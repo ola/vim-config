@@ -10,8 +10,8 @@ Bundles:
     Using Pathogen. http://www.vim.org/scripts/script.php?script_id=2332
 
     * ack             https://github.com/mileszs/ack.vim.git
+    * airline         https://github.com/bling/vim-airline.git
     * autoclose       https://github.com/Townk/vim-autoclose.git
-    * coffeescript    https://github.com/kchmck/vim-coffee-script
     * ctrlp           https://github.com/kien/ctrlp.vim.git
     * elixir          https://github.com/elixir-lang/vim-elixir.git 
     * emmet           https://github.com/mattn/emmet-vim.git
@@ -20,8 +20,8 @@ Bundles:
     * gitgutter       https://github.com/airblade/vim-gitgutter.git
     * less            https://github.com/groenewege/vim-less
     * nerdcommenter   https://github.com/scrooloose/nerdcommenter.git
-    * nimrod          https://github.com/zah/nimrod.vim/
     * repeat          https://github.com/tpope/vim-repeat.git
+    * rust            https://github.com/wting/rust.vim.git
     * scala           https://github.com/derekwyatt/vim-scala
     * surround        https://github.com/tpope/vim-surround.git
     * tagbar          https://github.com/majutsushi/tagbar.git

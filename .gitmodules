@@ -22,10 +22,6 @@
   path = bundle/surround
   url = https://github.com/tpope/vim-surround.git
   ignore = untracked
-[submodule "bundle/zencoding"]
-  path = bundle/zencoding
-  url = https://github.com/mattn/zencoding-vim.git
-  ignore = untracked
 [submodule "bundle/scala"]
   path = bundle/scala
   url = git://github.com/derekwyatt/vim-scala.git
@@ -62,10 +58,6 @@
   path = bundle/xptemplate
   url = git@github.com:drmingdrmer/xptemplate.git
   ignore = untracked
-[submodule "bundle/nimrod"]
-  path = bundle/nimrod
-  url = git@github.com:zah/nimrod.vim.git
-  ignore = untracked
 [submodule "bundle/fswitch"]
   path = bundle/fswitch
   url = git@github.com:derekwyatt/vim-fswitch.git
@@ -73,4 +65,8 @@
 [submodule "bundle/rust"]
   path = bundle/rust
   url = git@github.com:wting/rust.vim.git
+  ignore = untracked
+[submodule "bundle/airline"]
+	path = bundle/airline
+	url = git@github.com:bling/vim-airline.git
   ignore = untracked
