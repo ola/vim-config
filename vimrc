@@ -38,7 +38,7 @@ set backspace=indent,eol,start whichwrap+=<,>,[,]
 set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮
 
 " Save on losing focus
-au FocusLost * :wa
+" au FocusLost * :wa
 
 " Resize splits when the window is resized
 au VimResized * exe "normal! \<c-w>="
@@ -86,10 +86,6 @@ set statusline+=(%l,%c%V)\ %<%P                               " offset
 " }}}
 
 " Color scheme {{{
-
-syntax on
-set background=dark
-colorscheme oceandeep
 
 " }}}
 
@@ -204,28 +200,51 @@ endfunction
 " }}}
 
 " Environments (GUI/Console) {{{
+syntax on
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#whitespace#enabled = 0
+let g:airline#extensions#branch#enabled = 1
+let g:airline#extensions#hunks#enabled = 1
+
+" Use a line-drawing char for pretty vertical splits.
+set fillchars+=vert:│
 
 if has("gui_running")
-  let g:Powerline_symbols = 'fancy'
+  set background=dark
+  colorscheme oceandeep
 
-  "set guifont=Liberation\ Mono:h18
-  set guifont=Menlo\ For\ Powerline:h18
   set guioptions=aem
   set guitablabel=%N\ %t\ %M
 
   highlight SignColumn gui=bold guibg=grey6 guifg=LightSkyBlue3
   highlight SpellBad term=underline gui=undercurl guisp=Orange
 
-  " Use a line-drawing char for pretty vertical splits.
-  set fillchars+=vert:│
-
   if has("gui_macvim")
+    set guifont=Menlo\ For\ Powerline:h18
     set fuoptions=maxvert,maxhorz
   else
     " Not MacVIM
+    set guifont=Source\ Code\ Pro\ for\ Powerline\ 14
   endif
 else
   " Console
+  set background=dark
+  colorscheme solarized
+
+  if &term =~ '^rxvt'
+    " solid underscore
+    let &t_SI .= "\<Esc>[4 q"
+    " solid block
+    let &t_EI .= "\<Esc>[2 q"
+    " 1 or 0 -> blinking block
+    " 3 -> blinking underscore
+  endif
+  
+  highlight clear SignColumn
+  highlight GitGutterAdd ctermfg=green
+  highlight GitGutterChange ctermfg=yellow
+  highlight GitGutterDelete ctermfg=red
+  highlight GitGutterChangeDelete ctermfg=yellow
 endif
 
 " }}}
