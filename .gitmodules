@@ -67,6 +67,10 @@
   url = git@github.com:wting/rust.vim.git
   ignore = untracked
 [submodule "bundle/airline"]
-	path = bundle/airline
-	url = git@github.com:bling/vim-airline.git
+  path = bundle/airline
+  url = git@github.com:bling/vim-airline.git
+  ignore = untracked
+[submodule "bundle/solarized"]
+  path = bundle/solarized
+  url = git@github.com:altercation/vim-colors-solarized.git
   ignore = untracked
