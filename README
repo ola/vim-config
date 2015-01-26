@@ -18,11 +18,13 @@ Bundles:
     * fswitch         https://github.com/derekwyatt/vim-fswitch
     * fugitive        https://github.com/tpope/vim-fugitive.git
     * gitgutter       https://github.com/airblade/vim-gitgutter.git
+    * incsearch       https://github.com/haya14busa/incsearch.vim
     * less            https://github.com/groenewege/vim-less
     * nerdcommenter   https://github.com/scrooloose/nerdcommenter.git
     * repeat          https://github.com/tpope/vim-repeat.git
     * rust            https://github.com/wting/rust.vim.git
     * scala           https://github.com/derekwyatt/vim-scala
+    * supertab        https://github.com/ervandew/supertab 
     * surround        https://github.com/tpope/vim-surround.git
     * tagbar          https://github.com/majutsushi/tagbar.git
     * xptemplate      https://github.com/drmingdrmer/xptemplate.git
