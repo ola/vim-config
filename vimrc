@@ -177,8 +177,13 @@ map <Leader>gci :Gcommit<CR>
 
 nnoremap K <nop>
 
+" incsearch
+map /  <Plug>(incsearch-forward)
+map ?  <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
+
 " XPT
-let g:xptemplate_key = '<Tab>'
+let g:xptemplate_key = '<M-Space>'
 " }}}
 
 " Functions {{{
