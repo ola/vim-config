@@ -158,6 +158,8 @@ map <leader>es :sp %%
 map <leader>ev :vsp %%
 map <leader>et :tabe %%
 
+nnoremap K <nop>
+
 " Plugin mappings
 map <Leader>bo :BufOnly<CR>
 map <Leader>A :Ack<SPACE>
@@ -175,15 +177,27 @@ map <Leader>gp :Git push<CR>
 map <Leader>gco :Gread<CR>
 map <Leader>gci :Gcommit<CR>
 
-nnoremap K <nop>
-
 " incsearch
 map /  <Plug>(incsearch-forward)
 map ?  <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
 
+" Remap autocomplete menu control keys
+"inoremap <expr> <Esc> pumvisible() ? "\<C-e>" : "\<Esc>"
+"inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"
+inoremap <expr> j pumvisible() ? "\<C-n>" : "j"
+inoremap <expr> k pumvisible() ? "\<C-p>" : "k"
+inoremap <expr> h pumvisible() ? "\<PageUp>\<C-n>\<C-p>" : "h"
+inoremap <expr> l pumvisible() ? "\<PageDown>\<C-n>\<C-p>" : "l"
+
+" SuperTab
+let g:SuperTabCrMapping = 0 " prevent remap from breaking supertab
+let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabContextDefaultCompletionType = "<c-n>"
+let g:SuperTabClosePreviewOnPopupClose = 1 " close scratch window on autocompletion
+
 " XPT
-let g:xptemplate_key = '<M-Space>'
+let g:xptemplate_key = '<C-Space>'
 " }}}
 
 " Functions {{{
@@ -250,6 +264,10 @@ else
   highlight GitGutterChange ctermfg=yellow
   highlight GitGutterDelete ctermfg=red
   highlight GitGutterChangeDelete ctermfg=yellow
+
+  highlight TabLine      ctermfg=Black  ctermbg=Green     cterm=NONE
+  highlight TabLineFill  ctermfg=Black  ctermbg=Green     cterm=NONE
+  highlight TabLineSel   ctermfg=White  ctermbg=DarkBlue  cterm=NONE
 endif
 
 " }}}
