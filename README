@@ -24,11 +24,14 @@ Bundles:
     * repeat          https://github.com/tpope/vim-repeat.git
     * rust            https://github.com/wting/rust.vim.git
     * scala           https://github.com/derekwyatt/vim-scala
+    * solarized       https://github.com/altercation/vim-colors-solarized
     * supertab        https://github.com/ervandew/supertab 
     * surround        https://github.com/tpope/vim-surround.git
+    * tabline         https://github.com/mkitt/tabline.vim
     * tagbar          https://github.com/majutsushi/tagbar.git
-    * xptemplate      https://github.com/drmingdrmer/xptemplate.git
+    * typescript      https://github.com/leafgarland/typescript-vim
     * vimproc         https://github.com/Shougo/vimproc.git
+    * xptemplate      https://github.com/drmingdrmer/xptemplate.git
 
 Syntax:
 
