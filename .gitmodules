@@ -75,14 +75,18 @@
   url = git@github.com:altercation/vim-colors-solarized.git
   ignore = untracked
 [submodule "bundle/supertab"]
-	path = bundle/supertab
-	url = git@github.com:ervandew/supertab.git
+  path = bundle/supertab
+  url = git@github.com:ervandew/supertab.git
   ignore = untracked
 [submodule "bundle/typescript"]
-	path = bundle/typescript
+  path = bundle/typescript
   ignore = untracked
-	url = git@github.com:leafgarland/typescript-vim.git
+  url = git@github.com:leafgarland/typescript-vim.git
 [submodule "bundle/tabline"]
-	path = bundle/tabline
+  path = bundle/tabline
   ignore = untracked
-	url = git@github.com:mkitt/tabline.vim.git
+  url = git@github.com:mkitt/tabline.vim.git
+[submodule "bundle/incsearch"]
+  path = bundle/incsearch
+  ignore = untracked
+  url = git@github.com:haya14busa/incsearch.vim
