@@ -52,7 +52,7 @@ set wildmode=list:longest
 
 set wildignore+=.git,.hg,.svn
 set wildignore+=*.jpg,*.bmp,*.gif,*.png,*.jpeg
-set wildignore+=*.o,*.obj,*.exe,*.dll,*.manifest
+set wildignore+=*.o,*.obj,*.exe,*.dll,*.manifest,*.so
 set wildignore+=*.class,*.jar,target,classes,lib
 set wildignore+=*.pyc,*.luac
 set wildignore+=*.sw? 
@@ -198,6 +198,10 @@ let g:SuperTabClosePreviewOnPopupClose = 1 " close scratch window on autocomplet
 
 " XPT
 let g:xptemplate_key = '<C-Space>'
+
+map <leader>rt :call RofiOpen("tabe")<cr>
+map <leader>re :call RofiOpen("e")<cr>
+
 " }}}
 
 " Functions {{{
@@ -214,6 +218,21 @@ function! Preserve(command)
     " Clean up: restore previous search history, and cursor position
     let @/=_s
     call cursor(l, c)
+endfunction
+
+" Strip the newline from the end of a string
+function! Chomp(str)
+  return substitute(a:str, '\n$', '', '')
+endfunction
+
+" Find a file and pass it to cmd
+" See http://leafo.net/posts/using_dmenu_to_open_quickly.html
+function! RofiOpen(cmd)
+  let fname = Chomp(system("git ls-files | rofi -dmenu -i -l 10 -p '" . a:cmd . ": '"))
+  if empty(fname)
+    return
+  endif
+  execute a:cmd . " " . fname
 endfunction
 
 " }}}
