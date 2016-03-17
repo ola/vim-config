@@ -344,3 +344,65 @@ augroup ft_groovy
 augroup END
 
 " }}}
+
+" Java {{{
+
+augroup ft_java
+  au!
+
+  let g:EclimDefaultFileOpenAction = 'vsplit'
+
+  nnoremap <C-x><C-x> :JavaSearchContext<CR>
+  nnoremap <C-x><C-t> :JUnitFindTest<CR>
+  nnoremap <C-x><C-u> :JUnit<CR>
+  nnoremap <C-x><C-i> :JavaImport<CR>
+  nnoremap <C-x><C-c> :JavaConstructor<CR>
+  nnoremap <C-x><C-o> :JavaImpl<CR>
+  nnoremap <C-x><C-g> :JavaGet<CR>
+  nnoremap <C-x><C-s> :JavaSet<CR>
+  nnoremap <C-x><C-d> :JavaDelegate<CR>
+  nnoremap <S-F6> :JavaMove<CR>
+  nnoremap <F6> :JavaRename<CR>
+augroup END
+
+" }}}
+
+" Elixir {{{
+
+" See https://github.com/mmorearty/elixir-ctags for ctags
+let g:tagbar_type_elixir = {
+    \ 'ctagstype' : 'elixir',
+    \ 'kinds' : [
+        \ 'f:functions',
+        \ 'functions:functions',
+        \ 'c:callbacks',
+        \ 'd:delegates',
+        \ 'e:exceptions',
+        \ 'i:implementations',
+        \ 'a:macros',
+        \ 'o:operators',
+        \ 'm:modules',
+        \ 'p:protocols',
+        \ 'r:records'
+    \ ]
+\ }
+
+" }}}
+
+" Rust {{{
+
+let g:tagbar_type_rust = {
+    \ 'ctagstype' : 'rust',
+    \ 'kinds' : [
+        \'T:types,type definitions',
+        \'f:functions,function definitions',
+        \'g:enum,enumeration names',
+        \'s:structure names',
+        \'m:modules,module names',
+        \'c:consts,static constants',
+        \'t:traits,traits',
+        \'i:impls,trait implementations',
+    \]
+	\}
+
+" }}}
