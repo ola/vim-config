@@ -90,3 +90,7 @@
   path = bundle/incsearch
   ignore = untracked
   url = git@github.com:haya14busa/incsearch.vim
+[submodule "bundle/elm"]
+	path = bundle/elm
+  ignore = untracked
+	url = git@github.com:ElmCast/elm-vim.git

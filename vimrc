@@ -406,3 +406,14 @@ let g:tagbar_type_rust = {
 	\}
 
 " }}}
+
+" Elm {{{
+
+augroup ft_elm
+  au!
+
+  let g:elm_format_autosave = 1
+  let g:elm_setup_keybindings = 0
+augroup END
+" }}}
+
