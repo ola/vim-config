@@ -94,3 +94,7 @@
 	path = bundle/elm
   ignore = untracked
 	url = git@github.com:ElmCast/elm-vim.git
+[submodule "bundle/todo"]
+	path = bundle/todo
+	url = git@github.com:freitass/todo.txt-vim.git
+  ignore = untracked

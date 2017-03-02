@@ -8,6 +8,7 @@ set nocompatible
 filetype plugin indent on
 
 let mapleader = ","
+let maplocalleader = "-"
 
 " Basic options {{{
 
