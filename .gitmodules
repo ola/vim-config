@@ -98,3 +98,7 @@
 	path = bundle/todo
 	url = git@github.com:freitass/todo.txt-vim.git
   ignore = untracked
+[submodule "bundle/ycm"]
+	path = bundle/ycm
+	url = git@github.com:Valloric/YouCompleteMe.git
+  ignore = untracked

@@ -192,13 +192,15 @@ inoremap <expr> h pumvisible() ? "\<PageUp>\<C-n>\<C-p>" : "h"
 inoremap <expr> l pumvisible() ? "\<PageDown>\<C-n>\<C-p>" : "l"
 
 " SuperTab
+let g:SuperTabMappingForward = '<c-tab>'
+let g:SuperTabMappingBackward = '<s-c-tab>'
 let g:SuperTabCrMapping = 0 " prevent remap from breaking supertab
 let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabContextDefaultCompletionType = "<c-n>"
 let g:SuperTabClosePreviewOnPopupClose = 1 " close scratch window on autocompletion
 
 " XPT
-let g:xptemplate_key = '<C-Space>'
+" let g:xptemplate_key = '<C-Space>'
 
 map <leader>rt :call RofiOpen("tabe")<cr>
 map <leader>re :call RofiOpen("e")<cr>
@@ -342,28 +344,6 @@ augroup ft_groovy
   au!
 
   au BufNewFile,BufRead *.gradle setf groovy
-augroup END
-
-" }}}
-
-" Java {{{
-
-augroup ft_java
-  au!
-
-  let g:EclimDefaultFileOpenAction = 'vsplit'
-
-  nnoremap <C-x><C-x> :JavaSearchContext<CR>
-  nnoremap <C-x><C-t> :JUnitFindTest<CR>
-  nnoremap <C-x><C-u> :JUnit<CR>
-  nnoremap <C-x><C-i> :JavaImport<CR>
-  nnoremap <C-x><C-c> :JavaConstructor<CR>
-  nnoremap <C-x><C-o> :JavaImpl<CR>
-  nnoremap <C-x><C-g> :JavaGet<CR>
-  nnoremap <C-x><C-s> :JavaSet<CR>
-  nnoremap <C-x><C-d> :JavaDelegate<CR>
-  nnoremap <S-F6> :JavaMove<CR>
-  nnoremap <F6> :JavaRename<CR>
 augroup END
 
 " }}}
