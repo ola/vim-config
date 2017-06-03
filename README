@@ -7,7 +7,7 @@ Plugins:
 
 Bundles:
 
-    Using Pathogen. http://www.vim.org/scripts/script.php?script_id=2332
+    Using Pathogen. https://github.com/tpope/vim-pathogen
 
     * ack             https://github.com/mileszs/ack.vim.git
     * airline         https://github.com/bling/vim-airline.git
@@ -33,10 +33,6 @@ Bundles:
     * typescript      https://github.com/leafgarland/typescript-vim
     * vimproc         https://github.com/Shougo/vimproc.git
     * xptemplate      https://github.com/drmingdrmer/xptemplate.git
-
-Syntax:
-
-    * Ragel           http://svn.complang.org/ragel/trunk/
 
 Colors:
 
