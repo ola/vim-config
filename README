@@ -1,5 +1,25 @@
 My VIM (http://www.vim.org/) configuration.
 
+Usage:
+
+  Clone the repository to the ~/.vim directory then initialize and update the submodules:
+
+    git clone https://github.com/ola/vim-config.git .vim 
+    git submodule init
+    git submodule update
+
+  Make a symbolic link to the vimrc:
+
+    ln -s ~/.vim/vimrc ~/.vimrc
+
+  Checkout the master of each bundle:
+
+    git submodule foreach git checkout master
+
+  To update all bundles use something like:
+
+    git submodule foreach git pull --ff-only origin master
+
 Plugins:
 
     * matchit       http://www.vim.org/scripts/script.php?script_id=39
@@ -15,12 +35,10 @@ Bundles:
     * ctrlp           https://github.com/kien/ctrlp.vim.git
     * elixir          https://github.com/elixir-lang/vim-elixir.git 
     * elm             https://github.com/ElmCast/elm-vim
-    * emmet           https://github.com/mattn/emmet-vim.git
     * fswitch         https://github.com/derekwyatt/vim-fswitch
     * fugitive        https://github.com/tpope/vim-fugitive.git
     * gitgutter       https://github.com/airblade/vim-gitgutter.git
     * incsearch       https://github.com/haya14busa/incsearch.vim
-    * less            https://github.com/groenewege/vim-less
     * nerdcommenter   https://github.com/scrooloose/nerdcommenter.git
     * repeat          https://github.com/tpope/vim-repeat.git
     * rust            https://github.com/wting/rust.vim.git
@@ -30,6 +48,7 @@ Bundles:
     * surround        https://github.com/tpope/vim-surround.git
     * tabline         https://github.com/mkitt/tabline.vim
     * tagbar          https://github.com/majutsushi/tagbar.git
+    * todo.txt        https://github.com/freitass/todo.txt-vim
     * typescript      https://github.com/leafgarland/typescript-vim
     * vimproc         https://github.com/Shougo/vimproc.git
     * xptemplate      https://github.com/drmingdrmer/xptemplate.git
