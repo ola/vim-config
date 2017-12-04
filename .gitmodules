@@ -70,10 +70,6 @@
   path = bundle/supertab
   url = git@github.com:ervandew/supertab.git
   ignore = untracked
-[submodule "bundle/typescript"]
-  path = bundle/typescript
-  ignore = untracked
-  url = git@github.com:leafgarland/typescript-vim.git
 [submodule "bundle/tabline"]
   path = bundle/tabline
   ignore = untracked

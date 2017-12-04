@@ -351,8 +351,6 @@ augroup END
 augroup ft_java
   au!
 
-  let g:EclimDefaultFileOpenAction = 'vsplit'
-
   nnoremap <C-x><C-x> :JavaSearchContext<CR>
   nnoremap <C-x><C-t> :JUnitFindTest<CR>
   nnoremap <C-x><C-u> :JUnit<CR>
