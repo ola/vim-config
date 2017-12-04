@@ -49,8 +49,6 @@ Bundles:
     * tabline         https://github.com/mkitt/tabline.vim
     * tagbar          https://github.com/majutsushi/tagbar.git
     * todo.txt        https://github.com/freitass/todo.txt-vim
-    * typescript      https://github.com/leafgarland/typescript-vim
-    * vimproc         https://github.com/Shougo/vimproc.git
     * xptemplate      https://github.com/drmingdrmer/xptemplate.git
 
 Colors:
