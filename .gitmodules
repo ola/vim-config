@@ -1,84 +1,84 @@
 [submodule "bundle/ack"]
-  path = bundle/ack
+	path = pack/bundle/start/ack
   url = https://github.com/mileszs/ack.vim.git
   ignore = untracked
 [submodule "bundle/autoclose"]
-  path = bundle/autoclose
+	path = pack/bundle/start/autoclose
   url = https://github.com/Townk/vim-autoclose.git
   ignore = untracked
 [submodule "bundle/fugitive"]
-  path = bundle/fugitive
+	path = pack/bundle/start/fugitive
   url = https://github.com/tpope/vim-fugitive.git
   ignore = untracked
 [submodule "bundle/nerdcommenter"]
-  path = bundle/nerdcommenter
+	path = pack/bundle/start/nerdcommenter
   url = https://github.com/scrooloose/nerdcommenter.git
   ignore = untracked
 [submodule "bundle/repeat"]
-  path = bundle/repeat
+	path = pack/bundle/start/repeat
   url = https://github.com/tpope/vim-repeat.git
   ignore = untracked
 [submodule "bundle/surround"]
-  path = bundle/surround
+	path = pack/bundle/start/surround
   url = https://github.com/tpope/vim-surround.git
   ignore = untracked
 [submodule "bundle/scala"]
-  path = bundle/scala
+	path = pack/bundle/start/scala
   url = git://github.com/derekwyatt/vim-scala.git
   ignore = untracked
 [submodule "bundle/tagbar"]
-  path = bundle/tagbar
+	path = pack/bundle/start/tagbar
   url = git://github.com/majutsushi/tagbar
   ignore=untracked
 [submodule "bundle/ctrlp"]
-  path = bundle/ctrlp
+	path = pack/bundle/start/ctrlp
   url = https://github.com/kien/ctrlp.vim.git
   ignore = untracked
 [submodule "bundle/gitgutter"]
-  path = bundle/gitgutter
+	path = pack/bundle/start/gitgutter
   url = git://github.com/airblade/vim-gitgutter.git
   ignore = untracked
 [submodule "bundle/elixir"]
-  path = bundle/elixir
+	path = pack/bundle/start/elixir
   url = git@github.com:elixir-lang/vim-elixir.git
   ignore = untracked
 [submodule "bundle/xptemplate"]
-  path = bundle/xptemplate
+	path = pack/bundle/start/xptemplate
   url = git@github.com:drmingdrmer/xptemplate.git
   ignore = untracked
 [submodule "bundle/fswitch"]
-  path = bundle/fswitch
+	path = pack/bundle/start/fswitch
   url = git@github.com:derekwyatt/vim-fswitch.git
   ignore = untracked
 [submodule "bundle/rust"]
-  path = bundle/rust
+	path = pack/bundle/start/rust
   url = git@github.com:wting/rust.vim.git
   ignore = untracked
 [submodule "bundle/airline"]
-  path = bundle/airline
+	path = pack/bundle/start/airline
   url = git@github.com:bling/vim-airline.git
   ignore = untracked
 [submodule "bundle/solarized"]
-  path = bundle/solarized
+	path = pack/bundle/start/solarized
   url = git@github.com:altercation/vim-colors-solarized.git
   ignore = untracked
 [submodule "bundle/supertab"]
-  path = bundle/supertab
+	path = pack/bundle/start/supertab
   url = git@github.com:ervandew/supertab.git
   ignore = untracked
 [submodule "bundle/tabline"]
-  path = bundle/tabline
+	path = pack/bundle/start/tabline
   ignore = untracked
   url = git@github.com:mkitt/tabline.vim.git
 [submodule "bundle/incsearch"]
-  path = bundle/incsearch
+	path = pack/bundle/start/incsearch
   url = git@github.com:haya14busa/incsearch.vim
   ignore = untracked
 [submodule "bundle/elm"]
-  path = bundle/elm
+	path = pack/bundle/start/elm
   url = git@github.com:ElmCast/elm-vim.git
   ignore = untracked
 [submodule "bundle/todo"]
-  path = bundle/todo
+	path = pack/bundle/start/todo
   url = git@github.com:freitass/todo.txt-vim.git
   ignore = untracked

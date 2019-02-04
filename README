@@ -17,6 +17,7 @@ Usage:
     git submodule foreach git checkout master
 
   To update all bundles use something like:
+    git submodule update --remote --merge
 
     git submodule foreach git pull --ff-only origin master
 
@@ -27,7 +28,7 @@ Plugins:
 
 Bundles:
 
-    Using Pathogen. https://github.com/tpope/vim-pathogen
+    Using pack.
 
     * ack             https://github.com/mileszs/ack.vim.git
     * airline         https://github.com/bling/vim-airline.git
