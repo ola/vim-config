@@ -237,10 +237,13 @@ endfunction
 
 " Environments (GUI/Console) {{{
 syntax on
+
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#whitespace#enabled = 0
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#hunks#enabled = 1
+
+let g:lsc_enable_autocomplete = v:false
 
 " Use a line-drawing char for pretty vertical splits.
 set fillchars+=vert:│
@@ -339,26 +342,6 @@ augroup ft_groovy
   au!
 
   au BufNewFile,BufRead *.gradle setf groovy
-augroup END
-
-" }}}
-
-" Java {{{
-
-augroup ft_java
-  au!
-
-  nnoremap <C-x><C-x> :JavaSearchContext<CR>
-  nnoremap <C-x><C-t> :JUnitFindTest<CR>
-  nnoremap <C-x><C-u> :JUnit<CR>
-  nnoremap <C-x><C-i> :JavaImport<CR>
-  nnoremap <C-x><C-c> :JavaConstructor<CR>
-  nnoremap <C-x><C-o> :JavaImpl<CR>
-  nnoremap <C-x><C-g> :JavaGet<CR>
-  nnoremap <C-x><C-s> :JavaSet<CR>
-  nnoremap <C-x><C-d> :JavaDelegate<CR>
-  nnoremap <S-F6> :JavaMove<CR>
-  nnoremap <F6> :JavaRename<CR>
 augroup END
 
 " }}}

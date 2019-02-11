@@ -17,7 +17,10 @@ Usage:
     git submodule foreach git checkout master
 
   To update all bundles use something like:
+
     git submodule update --remote --merge
+
+  or:
 
     git submodule foreach git pull --ff-only origin master
 
@@ -40,6 +43,7 @@ Bundles:
     * fugitive        https://github.com/tpope/vim-fugitive.git
     * gitgutter       https://github.com/airblade/vim-gitgutter.git
     * incsearch       https://github.com/haya14busa/incsearch.vim
+    * lsc             https://github.com/natebosch/vim-lsc.git
     * nerdcommenter   https://github.com/scrooloose/nerdcommenter.git
     * repeat          https://github.com/tpope/vim-repeat.git
     * rust            https://github.com/wting/rust.vim.git

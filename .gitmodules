@@ -82,3 +82,6 @@
 	path = pack/bundle/start/todo
   url = git@github.com:freitass/todo.txt-vim.git
   ignore = untracked
+[submodule "pack/bundle/start/lsc"]
+	path = pack/bundle/start/lsc
+	url = https://github.com/natebosch/vim-lsc.git
