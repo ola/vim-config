@@ -259,7 +259,7 @@ if has("gui_running")
   highlight SpellBad term=underline gui=undercurl guisp=Orange
 
   if has("gui_macvim")
-    set guifont=Menlo\ For\ Powerline:h18
+    set guifont=Fira\ Code:h14
     set fuoptions=maxvert,maxhorz
   else
     " Not MacVIM
