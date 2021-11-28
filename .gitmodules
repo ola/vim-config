@@ -85,3 +85,9 @@
 [submodule "pack/bundle/start/ale"]
   path = pack/bundle/start/ale
   url = git@github.com:w0rp/ale.git
+[submodule "pack/bundle/start/godot"]
+	path = pack/bundle/start/godot
+	url = git@github.com:habamax/vim-godot.git
+[submodule "pack/bundle/start/nord"]
+	path = pack/bundle/start/nord
+	url = git@github.com:arcticicestudio/nord-vim.git

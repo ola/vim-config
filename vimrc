@@ -53,7 +53,7 @@ set wildignore+=*.jpg,*.bmp,*.gif,*.png,*.jpeg
 set wildignore+=*.o,*.obj,*.exe,*.dll,*.manifest,*.so
 set wildignore+=*.class,*.jar,target,classes,lib
 set wildignore+=*.pyc,*.luac
-set wildignore+=*.sw? 
+set wildignore+=*.sw?
 set wildignore+=*.DS_Store
 
 " }}}
@@ -134,7 +134,7 @@ nnoremap <leader><space> :noh<cr>
 " Removes trailing whitespaces.
 nmap <Leader>$ :call Preserve("%s/\\s\\+$//e")<CR>
 
-" Retab 
+" Retab
 nmap <Leader>= :call Preserve("normal gg=G")<CR>
 
 " Removes empty lines
@@ -268,7 +268,7 @@ if has("gui_running")
 else
   " Console
   set background=dark
-  colorscheme solarized
+  colorscheme nord
 
   if &term =~ '^rxvt'
     " 1 or 0 -> blinking block
@@ -278,7 +278,7 @@ else
     " solid block
     let &t_EI .= "\<Esc>[2 q"
   endif
-  
+
   highlight clear SignColumn
   highlight GitGutterAdd ctermfg=green
   highlight GitGutterChange ctermfg=yellow
@@ -396,3 +396,20 @@ augroup ft_elm
 augroup END
 " }}}
 
+" Godot {{{
+
+augroup ft_gdscript
+  au!
+
+  "au FileType gdscript setlocal foldmethod=expr
+  au FileType gdscript setlocal tabstop=4
+
+  let g:ale_completion_enabled = 1
+  let g:ale_completion_autoimport = 1
+  let g:ale_linters.gdscript = ['gdscript']
+
+  set omnifunc=ale#completion#OmniFunc
+
+augroup END
+
+" }}}
