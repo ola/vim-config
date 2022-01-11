@@ -22,21 +22,9 @@
   path = pack/bundle/start/surround
   url = https://github.com/tpope/vim-surround.git
   ignore = untracked
-[submodule "bundle/scala"]
-  path = pack/bundle/start/scala
-  url = git://github.com/derekwyatt/vim-scala.git
-  ignore = untracked
-[submodule "bundle/tagbar"]
-  path = pack/bundle/start/tagbar
-  url = git://github.com/majutsushi/tagbar
-  ignore=untracked
 [submodule "bundle/ctrlp"]
   path = pack/bundle/start/ctrlp
   url = https://github.com/kien/ctrlp.vim.git
-  ignore = untracked
-[submodule "bundle/gitgutter"]
-  path = pack/bundle/start/gitgutter
-  url = git://github.com/airblade/vim-gitgutter.git
   ignore = untracked
 [submodule "bundle/elixir"]
   path = pack/bundle/start/elixir
@@ -86,8 +74,17 @@
   path = pack/bundle/start/ale
   url = git@github.com:w0rp/ale.git
 [submodule "pack/bundle/start/godot"]
-	path = pack/bundle/start/godot
-	url = git@github.com:habamax/vim-godot.git
+  path = pack/bundle/start/godot
+  url = git@github.com:habamax/vim-godot.git
 [submodule "pack/bundle/start/nord"]
-	path = pack/bundle/start/nord
-	url = git@github.com:arcticicestudio/nord-vim.git
+  path = pack/bundle/start/nord
+  url = git@github.com:arcticicestudio/nord-vim.git
+[submodule "pack/bundle/start/gitgutter"]
+	path = pack/bundle/start/gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "pack/bundle/start/scala"]
+	path = pack/bundle/start/scala
+	url = https://github.com/derekwyatt/vim-scala.git
+[submodule "pack/bundle/start/tagbar"]
+	path = pack/bundle/start/tagbar
+	url = https://github.com/preservim/tagbar.git
